@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background-color: #e2fee7;
+    display: flex;
+    justify-content: center;
+    height: 200vh;
+    align-items: center;
+}
+.Button{
+    text-decoration: none;
+    background-color: #ffd900;
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    color: black;
+    font-size: 20px;
+    font-weight: 1000;
+    position: relative;
+    overflow: hidden;
+}
+.Button::before{
+    content: "";
+    background-color:rgb(249, 148, 76);
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: var(--posY);
+    left: var(--posX);
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    transition: width 1s , height 1s;
+}
+.Button:hover::before{
+    height: 200px;
+    width: 200px;
+}
+.Button span{
+    position: relative;
+    z-index: 1;
+}
