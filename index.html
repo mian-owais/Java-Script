@@ -3,44 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive NavBar</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Colour_Changer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="left">
-            <img class="Logo" src="Logo.png" alt="">
-            <h1>Software Degree</h1>
+    <section class="hero">
+        <h1>Back-Ground Colour Changer</h1>
+        <h3>(Project)</h3>
+        <img src="nature.png" width="200px" alt="">
+        <p>Click on the below Circle to change the Back-Ground Colour.</p>
+        <div class="container">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
         </div>
-        <ul class="shown">
-            <li class="mobile"><a href="#">Home</a></li>
-            <li class="mobile"><a href="#">About</a></li>
-            <li class="mobile"><a href="#">Contact</a></li>
-            <li class="bar"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-        </ul>
-        <ul class="hide">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
-        </ul>
-    </nav>
-
-    <script>
-        const barE1e = document.querySelector(".bar")
-        const hideE1e = document.querySelector(".hide")
-        const closeE1e = document.querySelector(".close")
-
-        barE1e.addEventListener("click", ()=>{
-            hideE1e.style.display="block"
-
-        })
-        closeE1e.addEventListener("click", ()=>{
-            hideE1e.style.display="none"
-
-        })
-    </script>
-    
+        <p><i>With HTML, CSS and JavaScript</i></p>
+        <img src="Language_icon.png" width="240px">
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

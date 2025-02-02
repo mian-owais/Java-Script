@@ -2,44 +2,55 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: sans-serif;
 }
-body{
-    background-color: #e2fee7;
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.container{
     display: flex;
-    justify-content: center;
-    height: 200vh;
-    align-items: center;
+    gap: 47px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgba(23, 23, 23, 0.6);
+    border-radius: 10px;
+    box-shadow: 10px 20px 20px;
+
 }
-.Button{
-    text-decoration: none;
-    background-color: #ffd900;
-    padding: 20px 40px;
-    border-radius: 30px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
-    color: black;
+h1 ,h2{
+    font-size: 40px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+p{
     font-size: 20px;
     font-weight: 1000;
-    position: relative;
-    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 25px;
+
 }
-.Button::before{
-    content: "";
-    background-color:rgb(249, 148, 76);
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: var(--posY);
-    left: var(--posX);
-    transform: translate(-50% , -50%);
+.box{
+    height: 90px;
+    width: 90px;
+    border: 1px solid black;
     border-radius: 50%;
-    transition: width 1s , height 1s;
 }
-.Button:hover::before{
-    height: 200px;
-    width: 200px;
+#box1{
+    background-color: #85A98F;
 }
-.Button span{
-    position: relative;
-    z-index: 1;
+#box2{
+    background-color: #FCF596;
+}
+#box3{
+    background-color: #48A6A7;
+}
+#box4{
+    background-color:#FFBF61;
+}
+#box5{
+    background-color: #F0C1E1;
 }
