@@ -1,15 +1,16 @@
-const textArea = document.getElementById("Text_Area")
-const totalChar = document.getElementById("Total_Char")
-const remainChar = document.getElementById("Remaining_Char")
+const imgContainer = document.querySelector(".img-container")
+const btnEl = document.querySelector(".btn")
 
 
-textArea.addEventListener("keyup", () => {
-    updateCounter()
+btnEl.addEventListener("click", ()=>{
+    imgNum = 8
+    updateImg()
 })
 
-updateCounter()
-
-function updateCounter(){
-    totalChar.innerText = textArea.value.length
-    remainChar.innerText =  textArea.getAttribute("maxLength") - textArea.value.length
+function updateImg(){
+    for(let i = 0; i < imgNum; i++){
+        const newImg = document.createElement("img")
+        newImg.src = `https://picsum.photos/300?random=${Math.floor(Math.random()*1000)}`
+        imgContainer.appendChild(newImg)
+    }
 }
